@@ -223,7 +223,7 @@ will generate Makefiles for the MinGW compiler which can then be built using the
 
 Once successfully built, the addon and python bindings will be located in the ```build/bl_flip_fluids/``` directory.
 
-Windows 10
+#### Windows 10
 
 Download the CUDA toolkit (https://developer.nvidia.com/cuda-downloads) and the Build Tools for Visual Studio 2017 (https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017)
 
@@ -232,6 +232,14 @@ git clone https://github.com/rlguy/Blender-FLIP-Fluids.git
 cd ./Blender-FLIP-Fluids
 cmake . -G "Visual Studio 15 2017 Win64"
 cmake --build .
+```
+
+#### Linux
+
+Under Linux it might be necessary to point out where CUDA lives by issuing
+
+```
+cmake -DOpenCL_INCLUDE_DIR=/usr/lib/x86_64-linux-gnu/ .
 ```
 
 ## Links
