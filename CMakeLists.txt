@@ -51,10 +51,10 @@ if(WITH_OPENCL)
 endif()
 
 if(WITH_OPENCL)
-    if(MSVC OR MINGW)
-        # Set to OpenCL ICD loader instead of vendor library
-        set(OpenCL_LIBRARY "C:/Windows/System32/OpenCL.dll")
-    endif()
+#    if(MSVC OR MINGW)
+#        # Set to OpenCL ICD loader instead of vendor library
+#        set(OpenCL_LIBRARY "C:/Windows/System32/OpenCL.dll")
+#    endif()
 
     # Allows use os clCreateCommandQueue in OpenCL versions >= 2.0
     add_definitions(-DCL_USE_DEPRECATED_OPENCL_1_2_APIS)
